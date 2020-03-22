@@ -1,16 +1,11 @@
 <template>
 <div id="app">
-  <van-button type="primary">测试</van-button>
+  <router-view></router-view>
 </div>
 </template>
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
-import {Button} from 'vant'
-@Component({
-  components:{
-    [Button.name]:Button
-  }
-})
+@Component
 export default class ClassName extends Vue{
 }
 </script>
